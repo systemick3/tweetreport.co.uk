@@ -92,6 +92,7 @@ app.controller('homeCtrl', ['$scope', '$window', '$rootScope', 'ipCookie', 'user
       }
 
     }, function (err) {
+      console.log(err);
       $rootScope.logoutMsg = 'Unable to retrieve data from Twitter. Please try again later.';
       $location.path('/logout');
     });

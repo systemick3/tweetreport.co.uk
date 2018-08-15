@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    image: systemick
+    ports:
+      - 8081:80
+    volumes:
+      - .:/srv/app
